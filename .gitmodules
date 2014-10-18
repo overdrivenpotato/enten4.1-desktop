@@ -4,3 +4,6 @@
 [submodule "libs/SDL-2"]
 	path = libs/SDL-2
 	url = https://github.com/spurious/SDL-mirror
+[submodule "enten"]
+	path = enten
+	url = https://github.com/overdrivenpotato/enten4.1
