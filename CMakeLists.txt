@@ -3,5 +3,7 @@ project(Enten_4_1)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
+add_subdirectory(libs/SDL-2)
+
 set(SOURCE_FILES src/main.cpp)
 add_executable(Enten_4_1 ${SOURCE_FILES})
