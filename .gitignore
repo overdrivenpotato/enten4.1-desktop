@@ -1,5 +1,6 @@
 .DS_Store
 .idea/
+engine/
 
 # Compiled Object files
 *.slo
