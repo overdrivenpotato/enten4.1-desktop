@@ -13,6 +13,7 @@ aux_source_directory(engine/src SOURCE_FILES)
 
 set(SOURCE_FILES
 	${SOURCE_FILES}
+	src/pcrenderer.h
 	src/main.cpp
 )
 add_executable(${TARGET} ${SOURCE_FILES})
