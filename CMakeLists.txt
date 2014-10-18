@@ -7,7 +7,14 @@ set(TARGET ${PROJECT_NAME})
 add_subdirectory(libs/SDL-2)
 include_directories(libs/SDL-2/include)
 
-set(SOURCE_FILES src/main.cpp)
+# entgine
+include_directories(engine/src)
+aux_source_directory(engine/src SOURCE_FILES)
+
+set(SOURCE_FILES
+	${SOURCE_FILES}
+	src/main.cpp
+)
 add_executable(${TARGET} ${SOURCE_FILES})
 
 set(LIBS
