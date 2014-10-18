@@ -14,7 +14,15 @@ int main() {
                                                      | SDL_WINDOWPOS_CENTERED);
     SDL_GLContext context = SDL_GL_CreateContext(window);
 
-    // TODO
+    SDL_Event event;
+    while(true) {
+        if(SDL_PollEvent(&event)) {
+            if(event.type == SDL_QUIT) {
+                break;
+            }
+        }
+        SDL_GL_SwapWindow(window);
+    }
 
     SDL_GL_DeleteContext(context);
     SDL_Quit();
